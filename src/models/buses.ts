@@ -19,6 +19,7 @@ const LineSchema = new Schema<IBuse>(
     },
     status: {
       type: String,
+      enum: ["service", "out of service", "maintenance"],
     },
     driverID: {
       type: Schema.Types.ObjectId,
